@@ -1,0 +1,32 @@
+1. Read the csv file and store it in a dataframe.
+2. Missing values check and handled by different techniques like dropping the rows, filling the missing values with mean (for numerical columns) and mode (for categorical columns).
+
+3. New columns are created based on the existing columns like 'Age Group' based on the 'Age' column to get better insights from the data.
+
+4. Some advanced techniques are also used for filling the missing values :
+   - For numerical columns, I grouped data based on Country and Age group and filled the missing values with the mean of the respective group to get better results
+   - For categorical columns also, I grouped data based on Country and Age group and filled the missing values with the mode of the respective group to get better results
+5. Also, I have handled the invalid values like negative values in the Age column, Age greater than 100, percentage greater than 100, negative percentage, etc.
+6. I have also removed the duplicate rows from the dataset.
+7. Then removed outliers which were visualized using boxplot.
+8. Then I have fixed incosistencies in the data like 'Bharat' and 'India' are same, 'YT' and 'YouTube' are same, etc.
+9. Also for categorical columns, I have removed very rare ones, so data cleaning is done.
+10. EDA is done to understand the data better.
+11. Univariant analysis is done to understand the distribution of the data.
+    - For numerical columns, I have plotted the histogram and boxplot to understand the distribution of the data and printed the mean, median, mode, standard deviation, etc.
+    - For categorical columns, I have plotted the countplot to understand the distribution of the data and printed the mode, frequency, etc.
+12. Bivariant analysis is done to understand the relationship between the columns.
+
+    - Correlation matrix to identify relationships between numerical variables.
+    - Scatter plots for continuous variable relationships.
+    - Bar plots, violin plots, and box plots to compare categorical and numerical variables.
+
+13. Multivariant analysis is done to understand the relationship between multiple columns.
+
+    - Pair plots to analyze multiple relationships simultaneously.
+    - Heatmaps to visualize correlations among multiple variables.
+
+14. MOST IMPORTANT ONE: Group Comparisons are done , so that music industry companies understand the preferences of the users based on their country and age group.
+    - That's why i have compared listening time,platform, subscription, etc based on country and age group.
+    - This helps companies realy well to target the audience based on their preferences.
+15. Finally, I have saved the cleaned data in a new csv file.
